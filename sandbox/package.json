@@ -1,0 +1,6 @@
+{
+  "name": "dollar-coop-testnet",
+  "private": true,
+  "type": "module",
+  "dependencies": { "xrpl": "5.3.0" }
+}

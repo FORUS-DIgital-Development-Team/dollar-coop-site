@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="How the proposed network would use a common prefunded XRPL dollar instrument."
+    />
+    <meta
+      property="og:title"
+      content="Settlement and liquidity | Dollar.coop"
+    />
+    <meta
+      property="og:description"
+      content="How the proposed network would use a common prefunded XRPL dollar instrument."
+    />
+    <meta property="og:url" content="https://dollar.coop/settlement/" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://dollar.coop/settlement/" />
+    <link rel="icon" href="/assets/coop-turquoise-official.png" />
+    <link rel="stylesheet" href="/assets/site.css" />
+    <title>Settlement and liquidity | Dollar.coop</title>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="header">
+      <div class="wrap nav">
+        <div class="brand-lockup">
+          <a href="/" class="logo">dollar.coop</a>
+          <span class="coop-identity"
+            ><img
+              src="/assets/coop-turquoise-official.png"
+              width="110"
+              height="46"
+              alt="Global Cooperative Marque"
+          /></span>
+        </div>
+        <nav class="navlinks" aria-label="Main navigation">
+          <a href="/#institutions">Institutions</a
+          ><a href="/settlement/">Settlement and liquidity</a>
+          <a href="/#regulation">Regulation</a
+          ><a href="/trust/">Trust and risks</a>
+          <a class="nav-cta" href="/#participation">Pilot design</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <div class="wrap content">
+        <h1>Settlement and liquidity</h1>
+        <p>
+          The design uses one dollar claim on one XRP Ledger network. The
+          issuing account and currency code identify a trust-line token. A
+          matching symbol alone cannot identify the claim.
+        </p>
+        <h2>Illustrative transfer</h2>
+        <ol>
+          <li>
+            Bank A funds the issuer with USD 1 million and receives 1 million
+            tokens.
+          </li>
+          <li>
+            Bank A sends Bank B 250,000 tokens. Their holdings are 750,000 and
+            250,000 respectively. Issued supply and backing remain at 1 million.
+          </li>
+          <li>
+            Bank B can pay another approved participant using its balance. If it
+            instead redeems the full 250,000 and receives fiat, 750,000 tokens
+            and USD 750,000 of backing remain.
+          </li>
+        </ol>
+        <p>
+          The example assumes final funding, eligible banks, par redemption and
+          no fees. After tokens are extinguished, an unpaid fiat payout remains
+          a liability of the issuer.
+        </p>
+        <h2>Four separately funded obligations</h2>
+        <dl>
+          <dt><strong>Issuer reserves</strong></dt>
+          <dd>
+            Eligible assets backing outstanding tokens and supporting the
+            issuer’s redemption obligations.
+          </dd>
+          <dt><strong>Settlement inventory</strong></dt>
+          <dd>
+            Funded tokens held by each participant for approved network
+            payments.
+          </dd>
+          <dt><strong>Fiat and FX capacity</strong></dt>
+          <dd>
+            Separate capacity from contracted providers, with defined
+            currencies, cutoffs and payout terms.
+          </dd>
+          <dt><strong>Credit</strong></dt>
+          <dd>
+            Additional funding under a separate lender agreement, with
+            underwriting and limits.
+          </dd>
+        </dl>
+        <p>
+          All capacities are proposed. The same funds cannot be counted both as
+          issuer reserves and as operating cash or lending capital.
+        </p>
+        <p>
+          <a href="https://xrpl.org/docs/concepts/tokens/fungible-tokens"
+            >XRPL fungible token documentation</a
+          >
+        </p>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrap">
+        <img
+          src="/assets/forus-digital-cooperative-reversed.svg"
+          width="160"
+          height="48"
+          alt="FORUS Digital Cooperative"
+        />
+        <p>Dollar.coop is a proposed initiative developed with FORUS.</p>
+        <nav class="page-nav" aria-label="Site information">
+          <a href="/trust/">Service status and risks</a
+          ><a href="/trust/#site-data">Site data</a
+          ><a href="/trust/#terms">Use of this site</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
