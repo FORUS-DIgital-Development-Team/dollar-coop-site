@@ -43,11 +43,12 @@
               alt="Global Cooperative Marque"
           /></span>
         </div>
-        <nav class="navlinks" aria-label="Main navigation">
+        <nav class="navlinks" aria-label="Primary">
           <a href="/#institutions">Institutions</a
           ><a href="/settlement/">Settlement and liquidity</a>
           <a href="/#regulation">Regulation</a
           ><a href="/trust/">Trust and risks</a>
+          <a href="https://monitor.dollar.coop/">TST monitor (sign in)</a>
           <a class="nav-cta" href="/#participation">Pilot design</a>
         </nav>
       </div>
@@ -74,11 +75,9 @@
             </div>
           </div>
           <div class="network">
-            <div class="network-title">
-              <span>Proposed settlement flow</span>
-            </div>
-            <div class="flow">
-              <div class="flow-row">
+            <h2 class="network-title" id="flow-title">Proposed settlement flow</h2>
+            <ol class="flow" aria-labelledby="flow-title">
+              <li class="flow-row">
                 <span class="flow-icon" aria-hidden="true">1</span>
                 <div>
                   <strong>Fund</strong
@@ -87,8 +86,8 @@
                     dollars.</small
                   >
                 </div>
-              </div>
-              <div class="flow-row highlight">
+              </li>
+              <li class="flow-row highlight">
                 <span class="flow-icon" aria-hidden="true">2</span>
                 <div>
                   <strong>Transfer</strong
@@ -97,8 +96,8 @@
                     XRPL.</small
                   >
                 </div>
-              </div>
-              <div class="flow-row">
+              </li>
+              <li class="flow-row">
                 <span class="flow-icon" aria-hidden="true">3</span>
                 <div>
                   <strong>Reuse or redeem</strong
@@ -107,8 +106,8 @@
                     under the issuer’s terms.</small
                   >
                 </div>
-              </div>
-            </div>
+              </li>
+            </ol>
           </div>
         </div>
       </section>
@@ -151,13 +150,14 @@
       <section class="section dark" id="participation">
         <div class="wrap">
           <span class="eyebrow kicker">Optional design programme</span>
-          <h2>Assess an institutional pilot</h2>
+          <h2>Proposed institutional pilot</h2>
           <p class="section-intro">
             The proposed programme would document bank requirements, demonstrate
             synthetic settlement and assess one existing authorised issuer’s
-            XRPL instrument. Institutional enquiries will open once contact
-            routing and privacy terms are in place.
+            XRPL instrument.
           </p>
+          <p>Institutional enquiries are currently closed.</p>
+          <p><a class="button button-primary" href="/trust/">Read the service status and risks</a></p>
           <p class="section-intro">
             G4USD is a possible future issuer programme. It depends on verified
             issuer permissions, signed agreements and tested operating controls.
@@ -170,7 +170,7 @@
         <div class="wrap">
           <span class="eyebrow kicker"
             >Sources checked
-            <time datetime="2026-11-06">6 November 2026</time></span
+            <time datetime="2026-11-22">22 November 2026</time></span
           >
           <h2>US regulatory register</h2>
           <p class="section-intro">
@@ -195,20 +195,21 @@
               </p>
             </article>
             <article>
-              <div class="date">21 October 2026 · Final rule announced</div>
+              <div class="date">23 October 2026 · Final rule published</div>
               <h3>OCC implementation</h3>
               <p>
                 The OCC’s final rule for entities it supervises takes effect 18
-                January 2027. The OCC implementation page says application
-                intake has yet to open.
+                January 2027. The OCC says it will announce when it can accept
+                applications and waiver requests after the Office of Management
+                and Budget approves the forms.
               </p>
               <p>
                 <a
                   href="https://www.govinfo.gov/content/pkg/FR-2026-10-23/html/2026-21706.htm"
-                  >Final rule</a
+                  >OCC final rule for payment stablecoin issuers</a
                 ><br /><a
                   href="https://www.occ.gov/topics/charters-and-licensing/genius-act/index-genius-act.html"
-                  >Application status</a
+                  >OCC application and waiver status</a
                 >
               </p>
             </article>
@@ -216,15 +217,18 @@
               <div class="date">24 September 2026 · Two proposals</div>
               <h3>Federal Reserve</h3>
               <p>
-                The proposals cover applications by Board-supervised banks for a
-                subsidiary to issue stablecoins and substantive standards for
-                Board-supervised issuers and other covered entities. Both
-                comment periods close 30 November 2026.
+                Docket R-1900 covers how an insured state member bank would
+                apply for a subsidiary to issue payment stablecoins. Docket
+                R-1899 sets out proposed standards for issuers and other
+                covered entities. Comments on both are due 30 November 2026.
               </p>
               <p>
                 <a
                   href="https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm"
-                  >Proposal notices</a
+                  >Federal Reserve stablecoin proposals</a
+                ><br /><a
+                  href="https://www.federalreserve.gov/frrs/federal-reserve-regulatory-service.htm"
+                  >Federal Reserve regulatory register</a
                 >
               </p>
             </article>
@@ -240,10 +244,10 @@
               <p>
                 <a
                   href="https://ncua.gov/regulation-supervision/regulatory-compliance-resources/financial-technology-and-digital-assets"
-                  >Licensing proposal and custody guidance</a
+                  >NCUA licensing proposal and custody guidance</a
                 ><br /><a
                   href="https://ncua.gov/newsroom/press-release/2026/ncua-announces-proposed-rule-permitted-payment-stablecoin-issuer-standards"
-                  >Proposed issuer standards</a
+                  >NCUA proposed issuer standards</a
                 >
               </p>
             </article>
@@ -253,8 +257,8 @@
               <p>
                 Treasury’s proposal addresses US issuance and distribution. Its
                 notice distinguishes the 18 January 2027 framework date from the
-                broader restriction on US offering or sale starting 18 July
-                2028.
+                restriction on digital asset service providers offering or
+                selling certain payment stablecoins in the US from 18 July 2028.
               </p>
               <p>
                 <a href="https://home.treasury.gov/news/press-releases/sb0605"
@@ -267,8 +271,10 @@
               <h3>Treasury state certification</h3>
               <p>
                 Procedures for reviewing state regulatory regimes took effect 30
-                September 2026. Comments close 30 November 2026. Certification
-                of a regime is separate from an individual issuer’s permissions.
+                September 2026. Treasury will announce when it can accept
+                certifications after approval under the Paperwork Reduction Act.
+                Comments are due 30 November 2026. Certification covers the state regime.
+                Each issuer still needs its own permissions.
               </p>
               <p>
                 <a
@@ -287,7 +293,7 @@
               <p>
                 <a
                   href="https://www.fincen.gov/news/news-releases/treasury-proposes-rule-implement-genius-acts-requirements-counter-illicit"
-                  >Joint programme proposal</a
+                  >FinCEN and OFAC compliance proposal</a
                 >
               </p>
             </article>
@@ -325,9 +331,7 @@
                 2026.</span
               ><a
                 href="https://www.federalreserve.gov/econres/notes/feds-notes/stablecoins-in-2025-developments-and-financial-stability-implications-20260408.html"
-                target="_blank"
-                rel="noopener"
-                >Federal Reserve research ↗</a
+                >Federal Reserve stablecoin market research</a
               >
             </div>
             <div class="number">
@@ -336,9 +340,7 @@
                 >Assets in federally insured US credit unions, Q2 2026.</span
               ><a
                 href="https://ncua.gov/newsroom/press-release/2026/ncua-releases-second-quarter-2026-credit-union-system-performance-data"
-                target="_blank"
-                rel="noopener"
-                >NCUA Q2 2026 ↗</a
+                >NCUA credit union data for Q2 2026</a
               >
             </div>
           </div>

@@ -19,10 +19,11 @@ html {
 }
 body {
   margin: 0;
+  overflow-wrap: anywhere;
   background: var(--paper);
   color: var(--ink);
   font:
-    16px/1.65 system-ui,
+    1rem/1.65 system-ui,
     sans-serif;
 }
 h1,
@@ -54,11 +55,17 @@ a {
   color: inherit;
 }
 a:hover {
-  color: #158363;
+  color: #0844af;
 }
 a:focus-visible {
-  outline: 3px solid var(--mint2);
-  outline-offset: 4px;
+  outline: 3px solid #1e254a;
+  outline-offset: 0;
+  box-shadow: 0 0 0 6px #fff;
+}
+@media (forced-colors: active) {
+  a:focus-visible {
+    outline-color: Highlight;
+  }
 }
 .wrap {
   width: min(var(--max), calc(100% - 64px));
@@ -250,20 +257,16 @@ a:focus-visible {
   box-shadow: 0 28px 70px #04111d66;
 }
 .network-title {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  align-items: center;
   font-size: 0.75rem;
-  color: #c4d6d6;
+  line-height: inherit;
+  color: var(--mint);
   text-transform: uppercase;
   letter-spacing: 0.12em;
   margin-bottom: 22px;
 }
-.network-title span:last-child {
-  color: var(--mint);
-}
 .flow {
+  margin: 0;
+  padding: 0;
   display: grid;
   gap: 10px;
 }
@@ -601,6 +604,7 @@ a:focus-visible {
   .brand-lockup,
   .footer-brands {
     gap: 16px;
+    flex-wrap: wrap;
   }
   .coop-identity {
     padding: 9px 0 9px 16px;
@@ -737,7 +741,6 @@ a:focus-visible {
 }
 .hero .eyebrow,
 .hero em,
-.network-title span:last-child,
 .flow-row > b,
 .flow-icon,
 .dark .kicker,
