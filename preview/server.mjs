@@ -11,6 +11,9 @@ const pages = new Map([
   ['/trust/', ['trust/index.html', 'text/html']],
   ['/sitemap.xml', ['sitemap.xml', 'application/xml']],
   ['/robots.txt', ['robots.txt', 'text/plain']],
+  ['/assets/forus-digital-cooperative-horizontal-colour.svg', ['assets/forus-digital-cooperative-horizontal-colour.svg', 'image/svg+xml']],
+  ['/assets/montserrat-400.ttf', ['assets/montserrat-400.ttf', 'font/ttf']],
+  ['/assets/montserrat-700.ttf', ['assets/montserrat-700.ttf', 'font/ttf']],
   ['/assets/site.css', ['assets/site.css', 'text/css']],
   ['/assets/coop-turquoise-official.png', ['assets/coop-turquoise-official.png', 'image/png']],
   ['/assets/forus-digital-cooperative-reversed.svg', ['assets/forus-digital-cooperative-reversed.svg', 'image/svg+xml']],
@@ -66,7 +69,7 @@ export function createPreview({ database = ':memory:', now = Date.now } = {}) {
         'X-Content-Type-Options': 'nosniff',
         'Referrer-Policy': 'strict-origin-when-cross-origin',
         'X-Frame-Options': 'DENY',
-        'Content-Security-Policy': `default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; frame-ancestors 'none'; form-action ${preview ? "'self'" : "'none'"}`,
+        'Content-Security-Policy': `default-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; base-uri 'none'; frame-ancestors 'none'; form-action ${preview ? "'self'" : "'none'"}`,
       });
       res.end(req.method === 'HEAD' ? undefined : body);
     };
