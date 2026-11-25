@@ -17,6 +17,7 @@ const pages = new Map([
   ['/assets/montserrat-800.ttf', ['assets/montserrat-800.ttf', 'font/ttf']],
   ['/assets/forus-pattern-tile.png', ['assets/forus-pattern-tile.png', 'image/png']],
   ['/assets/forus-icon-32.png', ['assets/forus-icon-32.png', 'image/png']],
+  ['/assets/forus-layout-dcc480004d.css', ['assets/forus-layout-dcc480004d.css', 'text/css']],
   ['/assets/site.css', ['assets/site.css', 'text/css']],
   ['/assets/coop-turquoise-official.png', ['assets/coop-turquoise-official.png', 'image/png']],
   ['/assets/forus-digital-cooperative-reversed.svg', ['assets/forus-digital-cooperative-reversed.svg', 'image/svg+xml']],
