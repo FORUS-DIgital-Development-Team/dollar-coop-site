@@ -1,3 +1,5 @@
+@font-face { font-family: Montserrat; src: url("/assets/montserrat-400.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: Montserrat; src: url("/assets/montserrat-700.ttf") format("truetype"); font-weight: 700; font-display: swap; }
 :root {
   --ink: #101d29;
   --deep: #11293a;
@@ -35,7 +37,7 @@ p {
 h1,
 h2,
 h3 {
-  font-family: system-ui, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
   line-height: 1.12;
   letter-spacing: -0.035em;
 }
@@ -873,3 +875,5 @@ a:focus-visible {
 .footer a:hover {
   color: var(--mint);
 }
+
+.brand-lockup, .header .logo { flex-wrap: wrap; }
