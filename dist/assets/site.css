@@ -712,11 +712,15 @@ a:focus-visible {
   color: #0844af;
 }
 .header .logo img {
-  width: 230px;
-  height: 69px;
+  width: 132px;
+  height: auto;
 }
 .header .site-name {
-  border-left-color: #b7bfd5;
+  margin-left: 12px;
+  padding-left: 12px;
+  border-left: 1px solid #b7bfd5;
+  font: 700 1.05rem/1.3 Montserrat, Arial, sans-serif;
+  letter-spacing: normal;
   color: #1e254a;
 }
 .header .navlinks a {
@@ -823,7 +827,7 @@ a:focus-visible {
   border-left-color: #ffffff66;
 }
 @media (max-width: 650px) {
-  .header .logo img,
+  .header .logo img { width: 110px; }
   .footer .logo img {
     width: 175px;
     height: 53px;
